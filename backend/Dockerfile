@@ -4,6 +4,9 @@ FROM python:3.8-slim-buster
 # Create and set the working directory
 WORKDIR /app
 
+# Create a "logs" directory within the app directory
+RUN mkdir logs
+
 # Copy the current directory contents into the container at /app
 COPY . /app
 
